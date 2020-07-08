@@ -30,10 +30,7 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'TenagaKerjaController::index');
-$routes->get('/SiTenagaKerja/TambahTenagaKerja', 'TenagaKerjaController::tambahTenagaKerja');
-$routes->get('/SiTenagaKerja/DaftarTenagaKerja', 'TenagaKerjaController::index');
-$routes->get('/SiTenagaKerja/TenagaKerjaDetail', 'TenagaKerjaController::tenagaKerjaDetail');
+$routes->get('/', 'TkController::index');
 
 
 /**
